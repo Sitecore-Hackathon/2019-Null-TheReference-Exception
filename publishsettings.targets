@@ -1,0 +1,21 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <publishUrl>http://cadelam.local.reference.be</publishUrl>
+        <WebPublishMethod>FileSystem</WebPublishMethod>
+        <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+        <LastUsedPlatform>Any CPU</LastUsedPlatform>
+        <SiteUrlToLaunchAfterPublish />
+        <LaunchSiteAfterPublish>True</LaunchSiteAfterPublish>
+        <ExcludeApp_Data>False</ExcludeApp_Data>
+        <DeleteExistingFiles>False</DeleteExistingFiles>
+        <IncludeSetAclProviderOnDestination>false</IncludeSetAclProviderOnDestination>
+    </PropertyGroup>
+    <PropertyGroup>
+        <ExcludeFilesFromDeployment>
+            packages.config;*.sitecore;*.transform;CustomDictionary.xml;
+        </ExcludeFilesFromDeployment>
+        <ExcludeFoldersFromDeployment>
+            Properties;
+        </ExcludeFoldersFromDeployment>
+    </PropertyGroup>
+</Project>

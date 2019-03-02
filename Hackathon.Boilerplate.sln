@@ -29,12 +29,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{375DBE62-A3BE-4752-9471-6E1E815AD5DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hachathon.Platform", "src\Project\Platform\code\Hachathon.Platform.csproj", "{E7A76B9E-3D52-47E5-9499-9AB28AD118C6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A76B9E-3D52-47E5-9499-9AB28AD118C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A76B9E-3D52-47E5-9499-9AB28AD118C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A76B9E-3D52-47E5-9499-9AB28AD118C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A76B9E-3D52-47E5-9499-9AB28AD118C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
+		{375DBE62-A3BE-4752-9471-6E1E815AD5DC} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{E7A76B9E-3D52-47E5-9499-9AB28AD118C6} = {375DBE62-A3BE-4752-9471-6E1E815AD5DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
