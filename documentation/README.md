@@ -1,71 +1,186 @@
 # Documentation
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
-
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best use of SPE to help Content authors and Marketers
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+Bulk Operations Module is build for both content editors and developers to easily manipulate items in bulk by using Sitecore Powershell Extension. Module creates a new Ribbon that includes available operations. Available Bulk operations include:
+
+* Add Current Item
+
+* Add With Wizard
+
+* View Items
+
+* Report Items
+
+* Clear Items
+
+* Edit Fields
+
+* Delete Items
+
+* Expand Tokens 
+
+* Rename Items
+
+* Add Version
+
+* Remove Version
+
+* Publish
+
+* Run Powershell Command
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+- Sitecore Powershell Extensions 5.0
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+1. Use the Sitecore Installation Wizard to install the [package](#sc.package/Bulk Operations Manager-1.0.zip)
+2. Use the Sitecore Installation Wizard to install the [package](#Test Content Package.zip)
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
+Even though you can start working directly with package installation, if you want to make more advanced configuration you can use the item with the following path below.
 
-Remember you are using Markdown, you can provide code samples too:
+/sitecore/system/Modules/Bulk Operation Module/General Configuration
 
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
+This item includes a couple of property that you can change. 
+
+User Configuration Root: This is the folder which stores temporary user files.
+
+Multiedit Temporary Template Root: When you make edits with multi item edit feature, temporary template files are stored under this folder.
+
+Multiedit Temporary Item Root: This folder includes temporary items for multi edit feature.
+
+Multiedit Multiple Values Token: This value used as a token in multi item edit process.
+
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+* Add Current Item
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+Add selected item from Content Editor to the list of Bulk items to use in Bulk Operations.
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+![Add Current](images/Add-Remove%20Items/Add%20Current/Step%201.png?raw=true "Add Current")
 
-You can embed images of different formats too:
+* Add with Wizard
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
+Add selected item's only Children, Item itself and also Children or only Item itself.
 
-And you can embed external images too:
+![Step 1](images/Add-Remove%20Items/Add%20with%20Wizard/Step%201.png?raw=true "Step 1")
 
-![Random](https://placeimg.com/480/240/any "Random")
+![Step 2](images/Add-Remove%20Items/Add%20with%20Wizard/Step%202.png?raw=true "Step 2")
+
+Then filter items by adding rules, Filter by updated, Filter by created, Updated since or Updated until, Created since, Created until to use in Bulk operations.
+
+![Step 3](images/Add-Remove%20Items/Add%20with%20Wizard/Step%203.png?raw=true "Step 3")
+
+![Step 4](images/Add-Remove%20Items/Add%20with%20Wizard/Step%204%20(Rule).png?raw=true "Step 4")
+
+![Step 5](images/Add-Remove%20Items/Add%20with%20Wizard/Step%205.png?raw=true "Step 5")
+
+Then select from result items.
+
+![Final](images/Add-Remove%20Items/Add%20with%20Wizard/Final.png?raw=true "Final")
+
+* Clear Items
+
+Clear all selected items that is added for Bulk Operations.
+
+![Step 1](images/Edit%20Items/Delete%20Items/Step%201.png?raw=true "Step 1")
+
+![Step 2](images/Edit%20Items/Delete%20Items/Step%202.png?raw=true "Step 2")
+
+* Edit Fields
+  
+After adding items for Bulk Operations, you can edit common fields on those items.
+
+![Step 1](images/Edit%20Items%5CEdit%20Fields%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/Edit%20Items%5CEdit%20Fields%5CStep%202.png?raw=true "Step 2")
+
+![Step 3](images/Edit%20Items%5CEdit%20Fields%5CStep%203.png?raw=true "Step 3")
+
+![Step 4.1](images/Edit%20Items%5CEdit%20Fields%5CStep%204.1.png?raw=true "Step 4.1")
+
+![Step 4.2](images/Edit%20Items%5CEdit%20Fields%5CStep%204.2.png?raw=true "Step 4.2")
+
+* Expand Tokens
+
+By using this operation you can expand tokens to item values.
+
+![Step 1](images/Edit%20Items%5CExpand%20Tokens%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/Edit%20Items%5CExpand%20Tokens%5CStep%202.png?raw=true "Step 2")
+
+![Step 3](images/Edit%20Items%5CExpand%20Tokens%5CStep%203.png?raw=true "Step 3")
+
+![Step 4](images/Edit%20Items%5CExpand%20Tokens%5CStep%204.png?raw=true "Step 4")
+
+* Rename Items
+
+You can bulk edit all item names added to Bulk Operation list.
+
+![Step 1](images/Edit%20Items%5CRename%20Items%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/Edit%20Items%5CRename%20Items%5CStep%202.png?raw=true "Step 2")
+
+![Step 3](images/Edit%20Items%5CRename%20Items%5CStep%203.png?raw=true "Step 3")
+
+
+* Add  Language Version
+
+You can bulk add language versions to all items added to Bulk Operation list.
+
+![Step 1](images/Language%20Versions%5CAdd%20%20Language%20Version%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/Language%20Versions%5CAdd%20%20Language%20Version%5CStep%202.png?raw=true "Step 2")
+
+* Remove Language Version
+
+You can bulk remove language versions to all items added to Bulk Operation list.
+
+![Step 1](images/Language%20Versions%5CRemove%20Language%20Version%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/Language%20Versions%5CRemove%20Language%20Version%5CStep%202.png?raw=true "Step 2")
+
+![Step 3](images/Language%20Versions%5CRemove%20Language%20Version%5CStep%203.png?raw=true "Step 3")
+
+* Publish
+
+You can bulk publish items added to Bulk Operation list.
+
+![Step 1](images/Publish%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/Publish%5CStep%202.png?raw=true "Step 2")
+
+* View Items
+
+You can view items added to Bulk Operation list.
+
+![Step 1](images/View%5CView%20Items%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/View%5CView%20Items%5CStep%202.png?raw=true "Step 2")
+
+* Report Items
+
+You can report items added to Bulk Operation list.
+
+![Step 1](images/View%5CReport%20Items%5CStep%201.png?raw=true "Step 1")
+
+![Step 2](images/View%5CReport%20Items%5CStep%202.png?raw=true "Step 2")
+
+* Run Powershell Command
+
+You can try any Powershell Command on items added to Bulk Operation list. You can reach all selected Items by -Items paramater.
+
+![Powershell Command](images/Advanced/PowershellCommand.png?raw=true "Powershell Command")
 
 ## Video
 
 Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
 
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+[![Sitecore Hackathon Video Embedding Alt Text](https://youtu.be/IM_6QWcrzBQ)](https://youtu.be/IM_6QWcrzBQ)
