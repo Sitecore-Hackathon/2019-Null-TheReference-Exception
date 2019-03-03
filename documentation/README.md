@@ -183,4 +183,6 @@ You can try any Powershell Command on items added to Bulk Operation list. You ca
 
 Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
 
+
 [![Sitecore Hackathon Video Embedding Alt Text](https://youtu.be/IM_6QWcrzBQ)](https://youtu.be/IM_6QWcrzBQ)
+[![Sitecore Hackathon Video Embedding Alt Text](https://youtu.be/Gze25qf40tw)](https://youtu.be/Gze25qf40tw)
